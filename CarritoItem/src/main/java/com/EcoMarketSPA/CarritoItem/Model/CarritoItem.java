@@ -29,6 +29,8 @@ public class CarritoItem {
     @Column(nullable = false)
     private Double precioUnitario;
 
-    @Column(nullable = false)
-    private Double subtotal;
+    // Subtotal calculado dinámicamente
+    public Double getSubtotal() {
+        return this.cantidad * this.precioUnitario;
+    }
 }
