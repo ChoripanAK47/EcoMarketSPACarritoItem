@@ -10,6 +10,15 @@ API RESTful para la gestión de ítems en el carrito de compras de EcoMarketSPA.
 - **Carrito** puede tener muchos **CarritoItem** (1 a muchos).
 - **Producto** puede estar en muchos **CarritoItem** y **DetallePedido** (1 a muchos).
 
+## Modelo:
+
+- **CarritoItem**
+  - `id`: Identificador único del ítem en el carrito.
+  - `productoId`: Identificador del producto agregado al carrito (obligatorio).
+  - `cantidad`: Cantidad de unidades del producto (obligatorio).
+  - `precioUnitario`: Precio por unidad del producto (obligatorio).
+  - `subtotal`: Subtotal calculado dinámicamente como `cantidad * precioUnitario` (no almacenado en base de datos, solo método de cálculo).
+
 ## Endpoints
 
 Base URL: `/api/v1/carrito-items`
