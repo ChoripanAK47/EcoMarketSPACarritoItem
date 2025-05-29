@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcoMarketSpaCarritoApplication {
+public class EcoMarketSpaCarritoItemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EcoMarketSpaCarritoApplication.class, args);
+		SpringApplication.run(EcoMarketSpaCarritoItemApplication.class, args);
 	}
 
 }
